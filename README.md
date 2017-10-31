@@ -1,5 +1,6 @@
 # Embedis - Embedded Dictionary Server 
 
+This si my take on making this work on a esp32 under plaformio / arduino.
 [![Build Status](https://travis-ci.org/thingSoC/embedis.png?branch=master)](https://travis-ci.org/thingSoC/embedis)
 [![Github Releases](https://img.shields.io/github/release/thingSoC/embedis.svg)](https://github.com/thingSoC/embedis/releases)
 [![Github Issues](https://img.shields.io/github/issues/thingSoC/embedis.svg)](https://github.com/thingSoC/embedis/issues)

@@ -22,7 +22,7 @@
 
 /* Arduino is like a box of chocolates,
    You never know what you're going to get...
-   
+
    could be any compiler, version, or c/c++ libraries,
    could be any processor architecture, board, configuration, ...
    I have looked at many examples, but if anyone has a better,
@@ -93,19 +93,19 @@
       (void)size;
       return ptr;
     }
-#elif defined(ARDUINO_ARCH_ESP8266)
+#elif defined(ARDUINO_ARCH_ESP8266) || defined (ARDUINO_ARCH_ESP32)
    /* ESP8266 specific code - break down further by cpu model if necessary */
    // #pragma message ( "ESP8266 Architecture Selected" )
   #include <new>
 #elif defined(CORE_TEENSY)
    /* Teensy3.x specific code - break down further by cpu model if necessary */
-   /* this is not ideal, should change to use "_ARCH_" */ 
+   /* this is not ideal, should change to use "_ARCH_" */
    // #pragma message ( "Teensy Core Architecture Selected" )
   #include "avr/pgmspace.h"
   #include <new>
 #elif defined(__ARDUINO_X86__)
    /* Edison, Galileo, x86 specific code - break down further by cpu model if necessary */
-   /* this is not ideal, should change to use "_ARCH_" */ 
+   /* this is not ideal, should change to use "_ARCH_" */
    // #pragma message ( "X86 Architecture Selected" )
    #include "avr/pgmspace.h"
 #else
